@@ -20,12 +20,12 @@ module.exports = (ctx) => {
         if (!uploadChannel) {
             uploadChannel = "telegram";
         }
-        url = url + "?" + 'uploadChannel=' + uploadChannel;
+        url = url + "?" + "uploadChannel=" + uploadChannel;
         const paramName = "file";
         const jsonPath = "src";
         const token = {
-            "Authorization": userConfig.token
-        }
+            Authorization: userConfig.token,
+        };
         const imageUrlPrefix = userConfig.url;
         try {
             let imgList = ctx.output;
@@ -48,9 +48,7 @@ module.exports = (ctx) => {
                 delete imgList[i].buffer;
 
                 //以 Array 方式解析然后拿第一个参数
-                ctx.log.info("响应结果" + JSON.stringify(body));
                 body = JSON.parse(body)[0];
-                ctx.log.info("解析后的响应结果" + JSON.stringify(body));
                 // body = JSON.parse(body)
                 let imgUrl = body;
                 for (let field of jsonPath.split(".")) {
@@ -78,13 +76,10 @@ module.exports = (ctx) => {
             contentType: "multipart/form-data",
             "User-Agent": "PicGo",
         };
-        ctx.log.info("headers: " + JSON.stringify(headers));
-        ctx.log.info("token: " + JSON.stringify(token));
 
         if (token) {
             headers = Object.assign(headers, token);
         }
-        ctx.log.info("headers: " + JSON.stringify(headers));
         let formData = {};
         const opts = {
             method: "POST",
@@ -122,25 +117,25 @@ module.exports = (ctx) => {
                 alias: "Token",
             },
             {
-                name: 'upload_channel',
-                type: 'list',
+                name: "upload_channel",
+                type: "list",
                 default: userConfig.upload_channel,
                 required: false,
-                alias: '上传渠道(默认为 Telegram)',
+                alias: "上传渠道(默认为 Telegram)",
                 choices: [{
-                        name: 'TG',
-                        value: 'telegram'
+                        name: "TG",
+                        value: "telegram",
                     },
                     {
-                        name: 'CF-R2',
-                        value: 'cfr2'
+                        name: "CF-R2",
+                        value: "cfr2",
                     },
                     {
-                        name: 'S3',
-                        value: 's3'
+                        name: "S3",
+                        value: "s3",
                     },
-                ]
-            }
+                ],
+            },
         ];
     };
     return {
