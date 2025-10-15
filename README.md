@@ -56,7 +56,6 @@ npm install picgo-plugin-sanyue-imgbed
 #### Telegram (TG)
 - **特点**: 免费、稳定、速度快
 - **适用**: 个人博客、文档站点
-- **限制**: 单文件最大 20MB
 
 #### CF-R2
 - **特点**: 基于 Cloudflare R2 存储

@@ -20,7 +20,12 @@ module.exports = (ctx) => {
         if (!uploadChannel) {
             uploadChannel = "telegram";
         }
+
         url = url + "?" + "uploadChannel=" + uploadChannel;
+        let uploadFolder = userConfig.upload_folder;
+        if (uploadFolder) {
+            url = url + "&uploadFolder=" + uploadFolder;
+        }
         const paramName = "file";
         const jsonPath = "src";
         const token = {
@@ -135,6 +140,14 @@ module.exports = (ctx) => {
                         value: "s3",
                     },
                 ],
+            },
+            {
+                name: "upload_folder",
+                type: "input",
+                default: userConfig.upload_folder,
+                required: false,
+                message: "上传目标文件夹(默认空字符串，表示根目录)",
+                alias: "上传目标文件夹",
             },
         ];
     };
