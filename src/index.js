@@ -21,7 +21,7 @@ module.exports = (ctx) => {
             uploadChannel = "telegram";
         }
 
-        url = url + "?" + "uploadChannel=" + uploadChannel;
+        url = url +"?returnFormat=full"+ "&" + "uploadChannel=" + uploadChannel;
         let uploadFolder = userConfig.upload_folder;
         if (uploadFolder) {
             url = url + "&uploadFolder=" + uploadFolder;
@@ -31,7 +31,6 @@ module.exports = (ctx) => {
         const token = {
             Authorization: userConfig.token,
         };
-        const imageUrlPrefix = userConfig.url;
         try {
             let imgList = ctx.output;
             for (let i in imgList) {
@@ -60,7 +59,7 @@ module.exports = (ctx) => {
                     imgUrl = imgUrl[field];
                 }
                 if (imgUrl) {
-                    imgList[i]["imgUrl"] = imageUrlPrefix + imgUrl;
+                    imgList[i]["imgUrl"] =  imgUrl;
                 } else {
                     ctx.emit("notification", {
                         title: "返回解析失败",
