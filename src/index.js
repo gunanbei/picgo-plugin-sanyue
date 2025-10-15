@@ -15,7 +15,12 @@ module.exports = (ctx) => {
         if (!userConfig) {
             throw new Error("Can't find uploader config");
         }
-        const url = userConfig.url + "/upload";
+        let url = userConfig.url + "/upload";
+        let uploadChannel = userConfig.upload_channel;
+        if (!uploadChannel) {
+            uploadChannel = "telegram";
+        }
+        url = url + "?" + 'uploadChannel=' + uploadChannel;
         const paramName = "file";
         const jsonPath = "src";
         const token = {
@@ -110,12 +115,32 @@ module.exports = (ctx) => {
             },
             {
                 name: "token",
-                type: "input",
+                type: "password",
                 default: userConfig.token,
                 required: true,
                 message: "SanYue图床拥有上传权限的 token",
                 alias: "Token",
             },
+            {
+                name: 'upload_channel',
+                type: 'list',
+                default: userConfig.upload_channel,
+                required: false,
+                alias: '上传渠道(默认为 Telegram)',
+                choices: [{
+                        name: 'TG',
+                        value: 'telegram'
+                    },
+                    {
+                        name: 'CF-R2',
+                        value: 'cfr2'
+                    },
+                    {
+                        name: 'S3',
+                        value: 's3'
+                    },
+                ]
+            }
         ];
     };
     return {
