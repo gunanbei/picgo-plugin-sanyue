@@ -3,8 +3,26 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c4127038-6c0f-4d52-b50b-68f88bf7dfe4" name="更改" comment="chore(package): 更新插件名称和版本号&#10;&#10;- 将插件名称从 picgo-plugin-sanyue-imgbed 更改为 picgo-plugin-uploader-sanyue-imgbed&#10;- 将版本号从1.1.1 更新到1.1.7&#10;- 移除 dependencies 中对旧插件名称的引用">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="myGradleUserHome" value="$USER_HOME$/gradle/repo" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="7zjUJZAM" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -16,17 +34,90 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="347yp0sMHc1LeBBoqyWT8a16fj6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;LombokPluginIS_LOMBOK_JPS_FIX_ENABLED&quot;: &quot;true&quot;,
-    &quot;LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Lombok&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "LombokPluginIS_LOMBOK_JPS_FIX_ENABLED": "true",
+    "LombokPluginIS_LOMBOK_VERSION_CHECK_Enabled": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/linghuajian/Desktop/picgo-plugin-uploader-sanyue-imgbed",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "settings.editor.selected.configurable": "Lombok",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="chore: 添加 .gitignore 文件以忽略开发工具和依赖文件&#10;&#10;- 忽略 JetBrains 系列 IDE 的配置及缓存文件&#10;- 忽略 Node.js 相关的日志、调试、缓存及构建产物&#10;- 忽略常见的包管理器目录如 node_modules 和 jspm_packages- 忽略环境变量文件和测试报告等敏感或临时文件">
+      <option name="closed" value="true" />
+      <created>1760578285604</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760578285604</updated>
+    </task>
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c4127038-6c0f-4d52-b50b-68f88bf7dfe4" name="更改" comment="chore: 添加 .gitignore 文件以忽略开发工具和依赖文件&#10;&#10;- 忽略 JetBrains 系列 IDE 的配置及缓存文件&#10;- 忽略 Node.js 相关的日志、调试、缓存及构建产物&#10;- 忽略常见的包管理器目录如 node_modules 和 jspm_packages- 忽略环境变量文件和测试报告等敏感或临时文件" />
+      <created>1760579085142</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760579085142</updated>
+      <workItem from="1760579088936" duration="1153000" />
+      <workItem from="1760581046428" duration="794000" />
+      <workItem from="1760581875152" duration="1743000" />
+    </task>
+    <task id="LOCAL-00002" summary="chore: 更新 .gitignore 文件以忽略更多 IDE 和系统相关文件- 添加了对 .idea 目录下更多配置文件的忽略&#10;- 忽略了 .vscode 相关配置文件和目录&#10;- 添加了对 .DS_Store 文件的忽略&#10;- 忽略了 AWS 相关的用户特定配置文件- 扩展了对数据源配置文件的忽略规则">
+      <option name="closed" value="true" />
+      <created>1760579139065</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760579139065</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore(package): 更新插件名称和版本号&#10;&#10;- 将插件名称从 picgo-plugin-sanyue-imgbed 更改为 picgo-plugin-uploader-sanyue-imgbed&#10;- 将版本号从1.1.1 更新到1.1.7&#10;- 移除 dependencies 中对旧插件名称的引用">
+      <option name="closed" value="true" />
+      <created>1760582614514</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760582614515</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: 添加 .gitignore 文件以忽略开发工具和依赖文件&#10;&#10;- 忽略 JetBrains 系列 IDE 的配置及缓存文件&#10;- 忽略 Node.js 相关的日志、调试、缓存及构建产物&#10;- 忽略常见的包管理器目录如 node_modules 和 jspm_packages- 忽略环境变量文件和测试报告等敏感或临时文件" />
+    <MESSAGE value="chore: 更新 .gitignore 文件以忽略更多 IDE 和系统相关文件- 添加了对 .idea 目录下更多配置文件的忽略&#10;- 忽略了 .vscode 相关配置文件和目录&#10;- 添加了对 .DS_Store 文件的忽略&#10;- 忽略了 AWS 相关的用户特定配置文件- 扩展了对数据源配置文件的忽略规则" />
+    <MESSAGE value="chore(package): 更新插件名称和版本号&#10;&#10;- 将插件名称从 picgo-plugin-sanyue-imgbed 更改为 picgo-plugin-uploader-sanyue-imgbed&#10;- 将版本号从1.1.1 更新到1.1.7&#10;- 移除 dependencies 中对旧插件名称的引用" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(package): 更新插件名称和版本号&#10;&#10;- 将插件名称从 picgo-plugin-sanyue-imgbed 更改为 picgo-plugin-uploader-sanyue-imgbed&#10;- 将版本号从1.1.1 更新到1.1.7&#10;- 移除 dependencies 中对旧插件名称的引用" />
+  </component>
 </project>

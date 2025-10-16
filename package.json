@@ -1,6 +1,6 @@
 {
     "name": "picgo-plugin-uploader-sanyue-imgbed",
-    "version": "1.1.7",
+    "version": "1.1.9",
     "description": "uploader-sanyue-imgbed",
     "main": "src/index.js",
     "publishConfig": {
@@ -16,7 +16,13 @@
     "keywords": [
         "picgo",
         "picgo-gui-plugin",
-        "picgo-plugin"
+        "picgo-plugin",
+        "sanyue",
+        "imgbed",
+        "uploader",
+        "image-hosting",
+        "image-upload",
+        "sanyue-imgbed"
     ],
     "author": "huajianling",
     "license": "MIT",

@@ -13,17 +13,35 @@
 
 ## 安装
 
-### 方法一：通过 PicGo 插件市场安装
+### 方法一：通过 PicGo 命令行安装（推荐）
+
+```bash
+picgo install uploader-sanyue-imgbed
+```
+
+### 方法二：通过 PicGo 插件市场安装
 
 1. 打开 PicGo 应用
 2. 进入 `插件设置`
-3. 搜索 `picgo-plugin-sanyue-imgbed`
-4. 点击安装
+3. 搜索 `sanyue` 或 `uploader-sanyue-imgbed`
+4. 找到 `uploader-sanyue-imgbed` 插件并点击安装
 
-### 方法二：手动安装
+> **注意**：搜索时请使用 `sanyue` 或 `uploader-sanyue-imgbed` 作为关键词，不要包含 `picgo-plugin-` 前缀。
+
+### 方法三：使用 npm 全局安装
 
 ```bash
-npm install picgo-plugin-sanyue-imgbed
+npm install -g picgo-plugin-uploader-sanyue-imgbed
+```
+
+### 方法四：安装到 PicGo GUI 目录
+
+```bash
+cd ~/Library/Application\ Support/picgo  # macOS
+# cd ~/.config/picgo  # Linux
+# cd %APPDATA%\picgo  # Windows
+
+npm install picgo-plugin-uploader-sanyue-imgbed --save
 ```
 
 ## 配置说明
@@ -148,6 +166,12 @@ blog/images
 - **路径错误**: 检查文件夹路径格式，使用 `/` 分隔多级目录
 - **权限问题**: 确认 Token 有对应文件夹的写入权限
 
+#### 5. 插件市场搜索不到
+- **搜索关键词**: 使用 `sanyue` 或 `uploader-sanyue-imgbed`，不要包含 `picgo-plugin-` 前缀
+- **npm 索引延迟**: 新发布的版本可能需要 10-60 分钟才能在搜索中显示
+- **命令行安装**: 如果搜索不到，可以直接使用命令 `picgo install uploader-sanyue-imgbed` 安装
+- **清除缓存**: 尝试重启 PicGo 应用或清除应用缓存
+
 ### 错误代码说明
 
 | 错误信息 | 可能原因 | 解决方案 |
@@ -158,12 +182,30 @@ blog/images
 
 ## 开发信息
 
-- **版本**: 1.1.1
+- **包名**: `picgo-plugin-uploader-sanyue-imgbed`
+- **版本**: 1.1.9
 - **作者**: huajianling
 - **许可证**: MIT
 - **GitHub**: [https://github.com/gunanbei/picgo-plugin-sanyue](https://github.com/gunanbei/picgo-plugin-sanyue)
+- **NPM**: [https://www.npmjs.com/package/picgo-plugin-uploader-sanyue-imgbed](https://www.npmjs.com/package/picgo-plugin-uploader-sanyue-imgbed)
 
 ## 更新日志
+
+### v1.1.9 (2025-10-16)
+- 🐛 **重要修复**：移除错误的依赖配置，修复插件安装失败的问题
+- 📦 更新包名为 `picgo-plugin-uploader-sanyue-imgbed`
+- 🔍 优化 npm 搜索关键词，提升插件可发现性
+- 📝 完善 README 文档和安装说明
+
+### v1.1.8 (2025-10-16)
+- 🔧 清理依赖项，移除不存在的包引用
+- ⚡ 优化包体积
+
+### v1.1.6 (2025-10-16)
+- 🐛 修复依赖问题
+
+### v1.1.5 (2025-10-16)
+- 🔄 首次发布到 npm registry
 
 ### v1.1.1
 - ✨ 新增上传目标文件夹配置功能
